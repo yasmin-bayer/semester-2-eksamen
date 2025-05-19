@@ -6,17 +6,24 @@
     --ligth: #ffffff;
     --dark: #000000;
 }
-
+/*basics*/
 body{
     background: linear-gradient(var(--ligthPink), var(--ligthGreen));
-    background-size: 40000% 40000%;
-}
-/*logo*/
-.logo{
-    height: 6rem;
-    width: auto;
 
+    height: 110vh;
 }
+
+
+/*logo*/
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 10%;
+}
+
 
 /*Fonts (google fonts)*/
 .chewy-regular {
@@ -24,18 +31,18 @@ body{
     font-weight: 400;
     font-style: normal;
 }
-.logo-chewy{
-    width: 20rem;
-    height: auto;
-}
-.center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
+
+
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+
+
+.nunito-uniquifier> {
+             font-family: "Nunito", sans-serif;
+             font-optical-sizing: auto;
+             font-weight: 25;
+             font-style: normal;
+         }
