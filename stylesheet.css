@@ -13,15 +13,86 @@ body{
     height: 110vh;
 }
 
-
-/*logo*/
-
 .center{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     padding-top: 10%;
+}
+
+/*cirkel + produkter inde i - Forside*/
+/*chat har hjulpet med selve placeringerne af cirklerne og teksten*/
+.circles {
+    background-color: white;
+    color: var(--pink);
+    height: 8rem;
+    width: 8rem;
+    padding: 4rem;
+    border-radius: 100%;
+    position: relative;
+    margin: 10px auto;
+
+    font-size: 1.5rem;
+    white-space: nowrap;
+    flex-direction: column;
+    align-content: flex-end;
+    text-align: center;
+}
+.text{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    row-gap: 6rem;
+    margin: 6rem auto;
+    width: 100%;
+    max-width: 800px;
+}
+/*menuen*/
+.menu{
+        display: flex;
+        justify-content: space-between; /* Skubber indhold til venstre og højre */
+        align-items: center; /* Vertikalt centreret */
+        padding-top: 3rem; /* Giver plads omkring elementerne */
+}
+i{
+    font-size: 3rem;
+}
+.menu-icon-R{
+    margin-right: 3rem;
+}
+.menu-icon-L{
+    margin-left: 3rem;
+}
+
+/*telefon excessories*/
+.top-bar {
+    display: flex;
+    justify-content: space-between; /* Skubber indhold til venstre og højre */
+    align-items: center; /* Vertikalt centreret */
+    padding: 1rem; /* Giver plads omkring elementerne */
+
+}
+
+.left, .right {
+    display: flex; /* Tillader justering af flere ikoner inden for hver sektion */
+    align-items: center;
+}
+
+.right .fa-wifi {
+    margin-right: 1rem; /* Lidt afstand mellem Wi-Fi og batteri */
+}
+
+.left .fa-clock {
+    margin-left: 1rem; /* Plads omkring uret, hvis nødvendigt */
 }
 
 
@@ -31,18 +102,14 @@ body{
     font-weight: 400;
     font-style: normal;
 }
-
-
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-
-
 .nunito-uniquifier> {
-             font-family: "Nunito", sans-serif;
-             font-optical-sizing: auto;
-             font-weight: 25;
-             font-style: normal;
-         }
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 25;
+    font-style: normal;
+}
