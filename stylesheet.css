@@ -13,13 +13,29 @@ body{
     height: 110vh;
 }
 
+/*logo*/
 .center{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    padding-top: 10%;
+    width: 85%;
+    padding-top: 20%;
+    padding-bottom: 25%;
 }
+
+/*video justeringer*/
+.video{
+    width: 100%;
+    height: auto;
+}
+
+
+/*overskrifter centrering, og justeringer*/
+.overskrift{
+    text-align: center;
+    padding-top: 4rem;
+}
+
 
 /*cirkel + produkter inde i - Forside*/
 /*chat har hjulpet med selve placeringerne af cirklerne og teksten*/
@@ -78,9 +94,10 @@ body{
 /*menuen*/
 .menu{
         display: flex;
-        justify-content: space-between; /* Skubber indhold til venstre og højre */
+        justify-content: space-between; /* laver space mellem indholdet */
         align-items: center; /* Vertikalt centreret */
-        padding-top: 3rem; /* Giver plads omkring elementerne */
+        padding-top: 3rem;
+        padding-bottom: 3rem;
 }
 i{
     font-size: 3rem;
