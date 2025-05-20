@@ -39,6 +39,25 @@ body{
     align-content: flex-end;
     text-align: center;
 }
+.juices-FS{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+
+    /*Chat brugt til position*/
+    bottom: 2rem;
+    width: 95%;    /* juster billedets størrelse */
+    height: auto;
+    pointer-events: none;
+}
+.size{
+    height: 70%;
+}
+.size1{
+    height: 70%;
+    width: auto;
+}
 .text{
     position: absolute;
     left: 50%;
@@ -79,18 +98,14 @@ i{
     justify-content: space-between; /* Skubber indhold til venstre og højre */
     align-items: center; /* Vertikalt centreret */
     padding: 1rem; /* Giver plads omkring elementerne */
-
 }
-
 .left, .right {
     display: flex; /* Tillader justering af flere ikoner inden for hver sektion */
     align-items: center;
 }
-
 .right .fa-wifi {
     margin-right: 1rem; /* Lidt afstand mellem Wi-Fi og batteri */
 }
-
 .left .fa-clock {
     margin-left: 1rem; /* Plads omkring uret, hvis nødvendigt */
 }
