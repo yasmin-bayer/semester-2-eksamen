@@ -10,7 +10,25 @@
 body{
     background: linear-gradient(var(--ligthPink), var(--ligthGreen));
 
-    height: 110vh;
+    height: 100%;
+}
+
+h1{
+    margin-bottom: 0;
+    margin-top: 10rem;
+}
+
+h2{
+    margin-top: 2rem;
+    font-size: 3.5rem;
+}
+
+p{
+    margin-top: 0;
+}
+
+i{
+    font-size: 3rem;
 }
 
 /*logo*/
@@ -34,8 +52,18 @@ body{
 .overskrift{
     text-align: center;
     padding-top: 4rem;
+    font-size: 4rem;
 }
 
+.tekst{
+    font-size: 1.5rem;
+}
+.center-tekst{
+    text-align: center;
+
+    margin-left: 18%;
+    margin-right: 18%;
+}
 
 /*cirkel + produkter inde i - Forside*/
 /*chat har hjulpet med selve placeringerne af cirklerne og teksten*/
@@ -87,10 +115,18 @@ body{
     justify-content: center;
     gap: 1.5rem;
     row-gap: 6rem;
-    margin: 6rem auto;
+    margin-right: 6rem;
+    margin-left: 6rem;
     width: 100%;
     max-width: 800px;
 }
+
+.circle-link {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
 /*menuen*/
 .menu{
         display: flex;
@@ -99,9 +135,7 @@ body{
         padding-top: 3rem;
         padding-bottom: 3rem;
 }
-i{
-    font-size: 3rem;
-}
+
 .menu-icon-R{
     margin-right: 3rem;
 }
@@ -127,6 +161,11 @@ i{
     margin-left: 1rem; /* Plads omkring uret, hvis nødvendigt */
 }
 
+/*trust pilot*/
+
+.trust-pilot{
+    text-align: center;
+}
 
 /*Fonts (google fonts)*/
 .chewy-regular {
@@ -134,12 +173,12 @@ i{
     font-weight: 400;
     font-style: normal;
 }
-.bebas-neue-regular {
+.bebas-neue-regular, h3 {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-.nunito-uniquifier {
+.nunito-uniquifier, p {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 25;
@@ -207,7 +246,7 @@ i{
     border-radius: 1rem;
 }
 
-.juice-card p {
+.juice-card {
     margin-top: 0.5rem;
     font-weight: bold;
 }
