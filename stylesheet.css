@@ -134,12 +134,13 @@ i{
     font-weight: 400;
     font-style: normal;
 }
-.bebas-neue-regular {
+.bebas-neue-regular , h3{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
+
 }
-.nunito-uniquifier {
+.nunito-uniquifier, p, add-btn {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 25;
@@ -207,13 +208,62 @@ i{
     border-radius: 1rem;
 }
 
-.juice-card p {
+/*passer til størrelsen iphone 14 pro max - 430 x 932 */
+.medium-appelsin {
+    margin: 1%;
+}
+.medium-hylde {
+    margin: 3%;
+}
+
+.medium-rabarber {
+    margin: 5%;
+}
+
+.small-æble {
+    margin: 28%;
+}
+.small-appelsin {
+    margin: 58%;
+}
+.big-appelsin {
+    margin: 20%;
+}
+.big-æble {
+    margin: 15%;
+}
+.big-hylde {
+    margin: 22%;
+}
+.big-rabarber {
+    margin: 15%;
+}
+.big-vand {
+    margin: 5%;
+}
+.huge-ananas {
+    margin: 25%;
+}
+.huge-appelsin {
+    margin: 15%;
+}
+.huge-æble {
+    margin: 21%;
+}
+.huge-multi {
+    margin: 21%;
+}
+.rabarber-shot {
+    margin: 25%;
+}
+.citron-shot {
+    margin: 31%;
+}
+
+.juice-card {
     margin-top: 0.5rem;
     font-weight: bold;
 }
 .juice-card {
-    height: 100%;
     min-height: 300px; /* eller hvad der passer til dine billeder og tekst */
 }
-
-
