@@ -181,8 +181,6 @@ i{
 .filter-btn.active {
     border-color: var(--pink);
 }
-
-
 .juice-list {
     margin-top: 1rem;
     display: grid;

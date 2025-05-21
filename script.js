@@ -1,4 +1,3 @@
-/*Filtering af juice*/
 const buttons = document.querySelectorAll(".filter-btn");
 const cards = document.querySelectorAll(".juice-card");
 
