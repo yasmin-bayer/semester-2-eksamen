@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="robots" content="noindex, nofollow">
     <title>Juice Filter</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chewy&display=swap');
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chewy&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+    </style>
 </head>
 <body>
+<div class="top-bar">
+    <div class="left">
+        <i class="fa-regular fa-clock" style="color: var(--dark);"></i>
+    </div>
+    <div class="right">
+        <i class="fa-solid fa-wifi" style="color: var(--dark);"></i>
+        <i class="fa-solid fa-battery-empty" style="color: var(--dark);"></i>
+    </div>
+</div>
+
+<div>
+    <img src="logoicons/logotekst.png" alt="JuiceOrganic logo"
+         class="center">
+</div>
+
+<div class="menu">
+
+    <div class="left menu-icon-L">
+        <i class="fa-solid fa-bars" style="color: var(--dark);"></i>
+    </div>
+
+    <div class="right menu-icon-R">
+        <a href="kurv.html">
+            <i class="fa-solid fa-basket-shopping menu-icon-R" style="color: var(--dark);"></i> </a>
+        <i class="fa-regular fa-heart menu-icon-R" style="color: var(--dark);"></i>
+        <a href="profil.html">
+            <i class="fa-regular fa-user" style="color: var(--dark);"></i> </a>
+    </div>
+</div>
+
+<video class="video" autoplay muted>
+    <source src="produkter/kampagne-video.mp4">
+    Your browser does not support the video tag.
+</video>
+
+<!-- Smagsvarianter filter -->
 <div class="filter-scroll">
     <button class="filter-btn" data-flavor="Appelsin">
         <img src="logoicons/Aktiv%2010.png" alt="Appelsin">
@@ -33,6 +82,7 @@
     </button>
 </div>
 
+<!-- Juice produkterne -->
 <div class="juice-list">
     <div class="juice-card" data-flavor="Appelsin">
         <div class="juice-img-container">
@@ -265,7 +315,8 @@
 </div>
 
 
-
+<script src="https://kit.fontawesome.com/df9c71c29c.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
