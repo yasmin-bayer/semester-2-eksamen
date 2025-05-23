@@ -230,7 +230,7 @@ i{
     font-weight: 400;
     font-style: normal;
 }
-.bebas-neue-regular, h3{
+.bebas-neue-regular, h3, h4, h5{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -242,7 +242,12 @@ i{
     font-style: normal;
 }
 
-
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 60px ;
+}
 
 /*Produktside css*/
 /* Med hjælp fra ChatGPT */
@@ -393,6 +398,13 @@ i{
     max-width: 100%;
     border-radius: 1rem;
 }
+#modalImage {
+    width: 140px;   /* Juster størrelsen som du vil, fx 150px, 50%, etc. */
+    height: auto;   /* Bevarer proportionerne */
+    display: block;
+    margin: 0 auto; /* Centrer billedet */
+}
+
 
 /* ChatGPT */
 .modal-content .close {
@@ -406,6 +418,7 @@ i{
 .modal-content .close:hover {
     color: black;
 }
+
 
 
 /*Profil siden css */
