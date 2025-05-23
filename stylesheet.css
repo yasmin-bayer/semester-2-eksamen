@@ -35,7 +35,7 @@ i{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 35%;
+    width: 50%;
     padding-top: 5%;
 }
 
@@ -52,6 +52,11 @@ i{
     font-size: 1.5rem;
 }
 
+.juiceorganic-login{
+    text-align: center;
+    font-size: 8rem;
+}
+
 .opret-dig{
     text-decoration: none;
 }
@@ -62,6 +67,7 @@ i{
 
 .overskrift{
     color: var(--pink);
+    font-size: 10rem;
 }
 
 /*knapperne til login, chat er anvendt til hjælp af opsætningen*/
@@ -69,18 +75,17 @@ i{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    padding: 1rem 1.5rem;
-    border-radius: 999px;
+    gap: 8rem;
+    padding: 3rem 1rem;
+    border-radius: 100px;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
+    font-weight: bolder;
+    font-size: 2rem;
     color: var(--ligth);
     width: 90%;
-    max-width: 320px;
-    margin: 0.75rem auto;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
+    max-width: 600px;
+    margin: 2rem auto;
+    }
 
 .red-button {
     background-color: var(--pink);
@@ -90,15 +95,8 @@ i{
     background-color: var(--darkGreen);;
 }
 
-.icon img{
-    height: auto;
-    width: 0.5rem;
-}
-
-.icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.size2{
+    font-size: 2rem;
 }
 
 
@@ -170,6 +168,11 @@ i{
     height: 70%;
     width: auto;
 }
+
+.trust-pilot{
+    text-align: center;
+}
+
 .text{
     position: absolute;
     left: 50%;
