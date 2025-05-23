@@ -49,6 +49,29 @@
             <i class="fa-regular fa-user" style="color: var(--dark);"></i> </a>
     </div>
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+        const cartContainer = document.getElementById("cart");
+
+        if (cartItems.length === 0) {
+            cartContainer.innerHTML = "<p>Kurven er tom.</p>";
+            return;
+        }
+
+        cartItems.forEach(item => {
+            const div = document.createElement("div");
+            div.classList.add("cart-item");
+            div.innerHTML = `
+        <img src="${item.img}" alt="${item.name}" width="60">
+        <p><strong>${item.name}</strong></p>
+        <p>${item.price}</p>
+      `;
+            cartContainer.appendChild(div);
+        });
+    });
+</script>
+<div id="cart"></div>
 
 
 <script src="https://kit.fontawesome.com/df9c71c29c.js" crossorigin="anonymous"></script>

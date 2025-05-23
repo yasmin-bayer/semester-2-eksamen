@@ -296,6 +296,35 @@
     </div>
 </div>
 
+<script>
+    // Når DOM'en er klar
+    document.addEventListener("DOMContentLoaded", function () {
+        const addButtons = document.querySelectorAll(".add-btn");
+
+        addButtons.forEach(button => {
+            button.addEventListener("click", function () {
+                const juiceCard = this.closest(".juice-card");
+                const flavor = juiceCard.dataset.flavor;
+                const name = juiceCard.querySelector("h3").textContent.trim();
+                const price = juiceCard.querySelector(".price").textContent.trim();
+                const img = juiceCard.querySelector("img").src;
+
+                const item = { name, price, flavor, img };
+
+                // Hent eksisterende kurv fra localStorage, eller lav en ny
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+                // Tilføj varen
+                cart.push(item);
+
+                // Gem tilbage i localStorage
+                localStorage.setItem("cart", JSON.stringify(cart));
+
+                alert(`${name} er tilføjet til kurven.`);
+            });
+        });
+    });
+</script>
 
 <!-- Modal for pop up vindue til appelsin 20 cl med ingredienser med brug af ChatGPT-->
 <div id="juiceModal" class="modal">
