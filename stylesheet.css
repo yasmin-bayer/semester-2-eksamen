@@ -406,11 +406,21 @@ i{
 
 
 /*Profil siden css */
+
+.apple{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
 .profil-container {
-    max-width: 400px;
+    max-width: 600px;
     width: 100%;
     text-align: center;
-    margin: 0 auto; margin;
+    margin: 0 auto;
     padding: 2rem 1rem;
 }
 
@@ -431,10 +441,20 @@ i{
 }
 
 .knap-container {
-    margin-top: 30px;
+
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+.size3{
+    font-size: 3rem;
+}
+.size4 {
+    font-size: 2rem;
+    margin: 0;
+}
+.padding-top {
+    margin-top: 1rem;
 }
 
 .profil-knap {
@@ -459,6 +479,6 @@ i{
 
 .sektion-overskrift {
     margin-top: 40px;
-    font-size: 1.2rem;
+    font-size: 3rem;
     color: var(--pink);
 }
