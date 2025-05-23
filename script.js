@@ -1,6 +1,7 @@
+// Med hjælp fra ChatGPT//
 const buttons = document.querySelectorAll(".filter-btn");
 const cards = document.querySelectorAll(".juice-card");
-
+// Med hjælp fra ChatGPT//
 buttons.forEach(btn => {
     btn.addEventListener("click", () => {
         // Fjern aktiv klasse fra alle knapper
@@ -20,7 +21,7 @@ buttons.forEach(btn => {
         });
     });
 });
-
+// Med hjælp fra ChatGPT//
     document.addEventListener("DOMContentLoaded", () => {
     const modal = document.getElementById("juiceModal");
     const readMore = document.querySelector(".read-more");

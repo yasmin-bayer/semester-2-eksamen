@@ -245,14 +245,14 @@ i{
 
 
 /*Produktside css*/
-
+/* Med hjælp fra ChatGPT */
 .filter-scroll {
     display: flex;
     overflow-x: auto;
     gap: 0.5rem;
     padding: 0.5rem 0;
 }
-
+/* Med hjælp fra ChatGPT */
 .filter-btn {
     background: var(--ligth);
     border: 3px solid transparent;
@@ -277,6 +277,7 @@ i{
 .filter-btn.active {
     border-color: var(--pink);
 }
+/* Med hjælp fra ChatGPT */
 .juice-list {
     margin-top: 1rem;
     display: grid;
@@ -284,6 +285,7 @@ i{
     gap: 1rem;
 }
 
+/* Med hjælp fra ChatGPT */
 .juice-card {
     background: var(--ligth);
     padding: 1rem;
@@ -362,7 +364,7 @@ i{
     min-height: 300px; /* eller hvad der passer til dine billeder og tekst */
 }
 
-/* Modal baggrund */
+/* Modal baggrund - Med hjælp fra ChatGPT */
 .modal {
     display: none;
     position: fixed;
@@ -375,7 +377,7 @@ i{
     background-color: rgba(0,0,0,0.5);
 }
 
-/* Modal indhold */
+/* Modal indhold - Med hjælp fra ChatGPT */
 .modal-content {
     background-color: #fff;
     margin: 10% auto;
@@ -392,6 +394,7 @@ i{
     border-radius: 1rem;
 }
 
+/* Med hjælp fra ChatGPT */
 .modal-content .close {
     color: #aaa;
     float: right;
@@ -399,7 +402,7 @@ i{
     font-weight: bold;
     cursor: pointer;
 }
-
+/* Med hjælp fra ChatGPT, men nok ikke nødvendigt da dette primært er til mobilversion, så der bruges ikke hove*/
 .modal-content .close:hover {
     color: black;
 }
