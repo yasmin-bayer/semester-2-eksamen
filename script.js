@@ -21,3 +21,24 @@ buttons.forEach(btn => {
     });
 });
 
+    document.addEventListener("DOMContentLoaded", () => {
+    const modal = document.getElementById("juiceModal");
+    const readMore = document.querySelector(".read-more");
+    const closeBtn = document.querySelector(".close");
+
+    readMore.addEventListener("click", () => {
+    modal.style.display = "block";
+});
+
+    closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+    window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+    modal.style.display = "none";
+}
+});
+});
+
+
