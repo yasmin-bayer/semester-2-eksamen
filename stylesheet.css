@@ -10,9 +10,100 @@
 body{
     background: linear-gradient(var(--ligthPink), var(--ligthGreen));
 
-    height: 110vh;
+    height: 100%;
 }
 
+h1{
+    margin-bottom: 0;
+    margin-top: 10rem;
+}
+
+h2{
+    margin-top: 2rem;
+    font-size: 3.5rem;
+}
+
+p{
+    margin-top: 0;
+}
+
+i{
+    font-size: 3rem;
+}
+/*Logo login side*/
+.login-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    padding-top: 5%;
+}
+
+.row-tekst{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    row-gap: 6rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 800px;
+    font-size: 1.5rem;
+}
+
+.opret-dig{
+    text-decoration: none;
+}
+
+.opret-dig-farve{
+    color: var(--darkGreen);
+}
+
+.overskrift{
+    color: var(--pink);
+}
+
+/*knapperne til login, chat er anvendt til hjælp af opsætningen*/
+.block-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--ligth);
+    width: 90%;
+    max-width: 320px;
+    margin: 0.75rem auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.red-button {
+    background-color: var(--pink);
+}
+
+.green-button {
+    background-color: var(--darkGreen);;
+}
+
+.icon img{
+    height: auto;
+    width: 0.5rem;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*Forside*/
 /*logo*/
 .center{
     display: block;
@@ -35,12 +126,17 @@ body{
     text-align: center;
     padding-top: 4rem;
 }
+.center-tekst{
+    text-align: center;
 
+    margin-left: 18%;
+    margin-right: 18%;
+}
 
 /*cirkel + produkter inde i - Forside*/
 /*chat har hjulpet med selve placeringerne af cirklerne og teksten*/
 .circles {
-    background-color: white;
+    background-color: var(--ligth);
     color: var(--pink);
     height: 8rem;
     width: 8rem;
@@ -134,12 +230,12 @@ i{
     font-weight: 400;
     font-style: normal;
 }
-.bebas-neue-regular, h3 {
+.bebas-neue-regular, h3{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-.nunito-uniquifier, p {
+.nunito-uniquifier, p{
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 25;
