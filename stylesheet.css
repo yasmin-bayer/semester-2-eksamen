@@ -362,3 +362,58 @@ i{
     min-height: 300px; /* eller hvad der passer til dine billeder og tekst */
 }
 
+/*Profil siden css */
+.profil-container {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.profil-billede {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.profil-navn {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: var(--pink);
+    letter-spacing: 1px;
+}
+
+.knap-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profil-knap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    background-color: var(--ligth);
+    border: 2px solid var(--darkGreen);
+    border-radius: 30px;
+    color: var(--darkGreen);
+    font-size: 1rem;
+    text-decoration: none;
+    gap: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.profil-knap:hover {
+    background-color: var(--darkGreen);
+    color: var(--ligth);
+}
+
+.sektion-overskrift {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    color: var(--pink);
+}
