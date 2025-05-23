@@ -364,7 +364,7 @@ i{
     min-height: 300px; /* eller hvad der passer til dine billeder og tekst */
 }
 
-/* Modal baggrund - Med hjælp fra ChatGPT */
+/* Modal baggrund - Lavet med ChatGPT */
 .modal {
     display: none;
     position: fixed;
@@ -377,7 +377,7 @@ i{
     background-color: rgba(0,0,0,0.5);
 }
 
-/* Modal indhold - Med hjælp fra ChatGPT */
+/* Modal indhold - Lavet med ChatGPT */
 .modal-content {
     background-color: #fff;
     margin: 10% auto;
@@ -394,7 +394,7 @@ i{
     border-radius: 1rem;
 }
 
-/* Med hjælp fra ChatGPT */
+/* ChatGPT */
 .modal-content .close {
     color: #aaa;
     float: right;
@@ -443,22 +443,26 @@ i{
     letter-spacing: 1px;
 }
 
+/* Med hjælp fra ChatGPT */
 .knap-container {
-
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
+
 .size3{
     font-size: 3rem;
 }
+
 .size4 {
     font-size: 2rem;
     margin: 0;
 }
+
 .padding-top {
     margin-top: 1rem;
 }
+
 
 .profil-knap {
     display: flex;
@@ -475,6 +479,7 @@ i{
     transition: all 0.2s ease-in-out;
 }
 
+/* Med hjælp fra ChatGPT, men ikke nødvendigt da dette primært er til mobilversion */
 .profil-knap:hover {
     background-color: var(--darkGreen);
     color: var(--ligth);
