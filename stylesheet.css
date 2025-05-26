@@ -16,6 +16,7 @@ body{
 h1{
     margin-bottom: 0;
     margin-top: 10rem;
+    font-size: 3.5rem;
 }
 
 h2{
@@ -247,6 +248,7 @@ i{
     font-weight: 25;
     font-style: normal;
 }
+
 h3 {
     font-size: 40px;
 }
@@ -360,6 +362,7 @@ h5 {
         padding: 0.5rem;
         gap: 0.75rem;
     }
+}
 
 /*passer til størrelsen iphone 14 pro max - 430 x 932, bruges ikke længere men en del af processen til det færdige produkt */
 .medium-appelsin {
@@ -394,11 +397,7 @@ h5 {
 .big-rabarber {
     margin: 15%;
 }
-.big-vand {
-    height: 400px !important;      /* Justér efter behov */
-    width: auto;        /* Beholder billedets proportioner */
-    object-fit: contain !important;
-}
+
 .huge-ananas {
     margin: 25%;
 }
@@ -496,7 +495,9 @@ h5 {
     border-radius: 100%;
     display: block;
     margin: 0 auto;
+    overflow: hidden;
 }
+
 
 .profil-navn {
     margin-top: 20px;
@@ -504,6 +505,8 @@ h5 {
     color: var(--pink);
     letter-spacing: 1px;
 }
+
+
 
 /* Med hjælp fra ChatGPT */
 .knap-container {
