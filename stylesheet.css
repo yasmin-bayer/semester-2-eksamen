@@ -24,12 +24,15 @@ h2{
 }
 
 p{
+    font-size: 25px;
     margin-top: 0;
 }
 
 i{
     font-size: 3rem;
 }
+
+
 /*Logo login side*/
 .login-center{
     display: block;
@@ -195,11 +198,11 @@ i{
         display: flex;
         justify-content: space-between; /* laver space mellem indholdet */
         align-items: center; /* Vertikalt centreret */
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
 }
 i{
-    font-size: 3rem;
+    font-size: 6rem;
 }
 .menu-icon-R{
     margin-right: 3rem;
@@ -244,6 +247,9 @@ i{
     font-weight: 25;
     font-style: normal;
 }
+h3 {
+    font-size: 40px;
+}
 
 h4 {
     font-size: 20px;
@@ -257,10 +263,10 @@ h5 {
 .heart {
     background: none;
     border: none;
-    font-size: 28px;
+    font-size: 40px;
     padding: 0;
     margin: 0;
-    line-height: 1;
+    line-height: 2;
     color: var(--dark);
     box-shadow: none;
 }
@@ -273,7 +279,7 @@ h5 {
     border-radius: 99px;
     padding: 5px 20px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 30px;
 }
 
 
@@ -289,8 +295,8 @@ h5 {
     border: 3px solid transparent;
     border-radius: 50%;
     padding: 0.5rem;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -329,13 +335,24 @@ h5 {
     align-items: center;
     text-align: center;
     transition: transform 0.2s;
+    position: relative;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    min-height: 300px; /* eller hvad der passer til dine billeder og tekst */
 }
 
+.juice-card[data-flavor="Vand"] {
+    min-height: 400px;
+}
 .juice-card img {
-    width: 80%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-bottom: 8px;
     border-radius: 1rem;
 }
+
+
 /* Responsiv justering */
 @media (max-width: 768px) {
     .juice-list {
@@ -344,9 +361,12 @@ h5 {
         gap: 0.75rem;
     }
 
-/*passer til størrelsen iphone 14 pro max - 430 x 932 */
+/*passer til størrelsen iphone 14 pro max - 430 x 932, bruges ikke længere men en del af processen til det færdige produkt */
 .medium-appelsin {
-    margin: 1%;
+   margin: 60px;
+    top: 10px;
+    right: 10px;
+    width: 100px;
 }
 .medium-hylde {
     margin: 3%;
@@ -375,7 +395,9 @@ h5 {
     margin: 15%;
 }
 .big-vand {
-    margin: 5%;
+    height: 400px !important;      /* Justér efter behov */
+    width: auto;        /* Beholder billedets proportioner */
+    object-fit: contain !important;
 }
 .huge-ananas {
     margin: 25%;
@@ -394,14 +416,6 @@ h5 {
 }
 .citron-shot {
     margin: 31%;
-}
-
-.juice-card {
-    margin-top: 0.5rem;
-    font-weight: bold;
-}
-.juice-card {
-    min-height: 300px; /* eller hvad der passer til dine billeder og tekst */
 }
 
 /* Modal baggrund - Lavet med ChatGPT */
