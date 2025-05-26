@@ -312,9 +312,11 @@ h5 {
 .juice-list {
     margin-top: 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* To kolonner */
     gap: 1rem;
+    padding: 1rem;
 }
+
 
 /* Med hjælp fra ChatGPT */
 .juice-card {
@@ -330,10 +332,17 @@ h5 {
 }
 
 .juice-card img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 1rem;
 }
+/* Responsiv justering */
+@media (max-width: 768px) {
+    .juice-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 pr. række også på mobil */
+        padding: 0.5rem;
+        gap: 0.75rem;
+    }
 
 /*passer til størrelsen iphone 14 pro max - 430 x 932 */
 .medium-appelsin {
