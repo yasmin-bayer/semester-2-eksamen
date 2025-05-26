@@ -35,7 +35,7 @@ i{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 35%;
     padding-top: 5%;
 }
 
@@ -233,7 +233,7 @@ i{
     font-weight: 400;
     font-style: normal;
 }
-.bebas-neue-regular, h3{
+.bebas-neue-regular, h3, h4, h5{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -245,7 +245,12 @@ i{
     font-style: normal;
 }
 
-
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 60px ;
+}
 
 /*Produktside css*/
 /*chat har hjulpet til knappernes styling*/
@@ -278,7 +283,7 @@ i{
     gap: 0.5rem;
     padding: 0.5rem 0;
 }
-
+/* Med hjælp fra ChatGPT */
 .filter-btn {
     background: var(--ligth);
     border: 3px solid transparent;
@@ -303,6 +308,7 @@ i{
 .filter-btn.active {
     border-color: var(--pink);
 }
+/* Med hjælp fra ChatGPT */
 .juice-list {
     margin-top: 1rem;
     display: grid;
@@ -310,6 +316,7 @@ i{
     gap: 1rem;
 }
 
+/* Med hjælp fra ChatGPT */
 .juice-card {
     background: var(--ligth);
     padding: 1rem;
@@ -388,7 +395,7 @@ i{
     min-height: 300px; /* eller hvad der passer til dine billeder og tekst */
 }
 
-/* Modal baggrund */
+/* Modal baggrund - Lavet med ChatGPT */
 .modal {
     display: none;
     position: fixed;
@@ -401,7 +408,7 @@ i{
     background-color: rgba(0,0,0,0.5);
 }
 
-/* Modal indhold */
+/* Modal indhold - Lavet med ChatGPT */
 .modal-content {
     background-color: #fff;
     margin: 10% auto;
@@ -417,7 +424,15 @@ i{
     max-width: 100%;
     border-radius: 1rem;
 }
+#modalImage {
+    width: 140px;   /* Juster størrelsen som du vil, fx 150px, 50%, etc. */
+    height: auto;   /* Bevarer proportionerne */
+    display: block;
+    margin: 0 auto; /* Centrer billedet */
+}
 
+
+/* ChatGPT */
 .modal-content .close {
     color: #aaa;
     float: right;
@@ -425,15 +440,26 @@ i{
     font-weight: bold;
     cursor: pointer;
 }
-
+/* Med hjælp fra ChatGPT, men nok ikke nødvendigt da dette primært er til mobilversion, så der bruges ikke hove*/
 .modal-content .close:hover {
     color: black;
 }
 
 
+
 /*Profil siden css */
+
+.apple{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
 .profil-container {
-    max-width: 400px;
+    max-width: 600px;
     width: 100%;
     text-align: center;
     margin: 0 auto;
@@ -456,13 +482,27 @@ i{
     letter-spacing: 1px;
 }
 
+/* Med hjælp fra ChatGPT */
 .knap-container {
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
+.size3{
+    font-size: 3rem;
+}
+
+.size4 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.padding-top {
+    margin-top: 1rem;
+}
+
+/* Lavet med hjælp fra ChatGPT*/
 .profil-knap {
     display: flex;
     align-items: center;
@@ -478,6 +518,7 @@ i{
     transition: all 0.2s ease-in-out;
 }
 
+/* Med hjælp fra ChatGPT, men ikke nødvendigt da dette primært er til mobilversion */
 .profil-knap:hover {
     background-color: var(--darkGreen);
     color: var(--ligth);
@@ -485,6 +526,6 @@ i{
 
 .sektion-overskrift {
     margin-top: 40px;
-    font-size: 1.2rem;
+    font-size: 3rem;
     color: var(--pink);
 }
